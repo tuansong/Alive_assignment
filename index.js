@@ -32,10 +32,6 @@ const next = document.querySelector('.next');
 prev.addEventListener('click', () => mySlide.prev());
 next.addEventListener('click', () => mySlide.next());
 
-const hoveredImg = document.getElementById('hoverable');
-console.log(hoveredImg);
-hoveredImg.addEventListener('mouseover', hoveredImg.classList.add('hovered'));
-
 const branding = document.getElementById('branding');
 const marketing = document.getElementById('marketing');
 const media = document.getElementById('media');
