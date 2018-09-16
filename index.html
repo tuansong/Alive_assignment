@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./gallery-js/justifiedGallery.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="navbar">
+            <div class="nav">
+                <img src="./assets/logo.png" class="logo" alt="A-live">
+                <div class="nav-right">
+                    <div class="toggle-menu">
+                        <p>EN</p>
+                        <a href="#" onclick="openNav()" class="menu">MENU</a>
+                    </div>
+                    <ul>
+                        <a>
+                            <li>what we do</li>
+                        </a>
+                        <a>
+                            <li>our works</li>
+                        </a>
+                        <a>
+                            <li>who we are</li>
+                        </a>
+                        <a>
+                            <li>get in touch</li>
+                        </a>
+                    </ul>
+                    <div class="languages">
+                        <span>EN/</span>
+                        <span>JP/</span>
+                        <span>VN</span>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-list" class="dropdown-menu">
+                <button class="btn-close" onclick="closeNav()">X</button>
+                <a href="#">What we do</a>
+                <a href="#">Our work</a>
+                <a href="#">Who we are</a>
+                <a href="#">Get in touch</a>
+            </div>
+        </div>
+        <div class="intro">
+            <h1>We bring emotion to your product</h1>
+            <button>See who we are</button>
+        </div>
+    </section>
+    <section class="works">
+        <h1>LATEST WORKS</h1>
+        <p>WE BRING THIS SPECIAL IDEA
+            <p>
+                <div class="button-group">
+                    <a href="javascript:void(0)" id="branding">Branding</a>
+                    <a href="javascript:void(0)" id="marketing">Creative Marketing</a>
+                    <a href="javascript:void(0)" id="media">Social media</a>
+                    <a href="javascript:void(0)" id="developer">Web developer</a>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Branding</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Branding</a>
+                        <a href="#">Creative Marketing</a>
+                        <a href="#">Social media</a>
+                        <a href="#">Web developer</a>
+                    </div>
+                </div>
+                <div class="siema">
+                    <div class="slide">
+                        <img src="./assets/Works/1.jpg" alt="Siema image" />
+                        <img id="hoverable" src="./assets/Works/2.jpg" alt="Siema image" />
+                        <img src="./assets/Works/3.jpg" alt="Siema image" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/Works/1.jpg" alt="Siema image" />
+                        <img id="hoverable" src="./assets/Works/2.jpg" alt="Siema image" />
+                        <img src="./assets/Works/3.jpg" alt="Siema image" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/Works/1.jpg" alt="Siema image" />
+                        <img id="hoverable" src="./assets/Works/2.jpg" alt="Siema image" />
+                        <img src="./assets/Works/3.jpg" alt="Siema image" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/Works/1.jpg" alt="Siema image" />
+                        <img id="hoverable" src="./assets/Works/2.jpg" alt="Siema image" />
+                        <img src="./assets/Works/3.jpg" alt="Siema image" />
+                    </div>
+                </div>
+                <div class="categories">
+                    <div class="project">
+                        <img src="./assets/Works/1.jpg" alt="project 1">
+                        <p class="desc">Key Visual</p>
+                        <p class="title">lats wrks</p>
+                    </div>
+                    <div class="project">
+                        <img src="./assets/Works/2.jpg" alt="project 2">
+                        <p class="desc">Campaigns</p>
+                        <p class="title">LSWAT</p>
+                    </div>
+                    <div class="project">
+                        <img src="./assets/Works/3.jpg" alt="project 3">
+                        <p class="desc">Research</p>
+                        <p class="title">wrks</p>
+                    </div>
+                    <div class="project">
+                        <img src="./assets/Works/4.jpg" alt="project 4">
+                        <p class="desc">Public relations</p>
+                        <p class="title">l.a.t</p>
+                    </div>
+                </div>
+
+                <a class="prev">
+                    <img src="./assets/Works/arrow.png" alt="arrow">
+                </a>
+                <a class="next">
+                    <img src="./assets/Works/arrow.png" alt="arrow">
+                </a>
+                <a href="#" class="view-all">VIEW ALL</a>
+    </section>
+    <section class="news">
+        <h1>NEWS</h1>
+        <p>STAY UPDATE ON OUR DAILY ROUTINE
+            <p>
+                <div class="news-gallery">
+                    <div class="row">
+                        <div class="column">
+                            <div class="col-row">
+                                <img src="./assets/News/1.jpg">
+                                <img src="./assets/News/2.jpg">
+                            </div>
+                            <img src="./assets/News/5.jpg">
+                            <img src="./assets/News/4.jpg" id="mobile-img">
+                        </div>
+                        <div class="column mobile-view">
+                            <img src="./assets/News/6.jpg">
+                            <img src="./assets/News/3.jpg">
+                        </div>
+                        <div class="column mobile-view">
+                            <img src="./assets/News/4.jpg">
+                            <img src="./assets/News/7.jpg">
+                        </div>
+                    </div>
+                    <a href="#" class="view-all">VIEW ALL</a>
+                </div>
+
+    </section>
+    <section class="blogs">
+        <h1>OUR BLOG</h1>
+        <p>LET'S TELL THE STORIES THAT MATTER
+            <p>
+                <div class="container">
+                    <div class="blog">
+                        <img src="./assets/Blogs/1.jpg" alt="">
+                        <div class="desc">
+                            <p class="tag">Playground</p>
+                            <h3>Privacy is Power</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="./assets/Blogs/2.jpg" alt="">
+                        <div class="desc">
+                            <p class="tag">Collective</p>
+                            <h3>App Concept</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="./assets/Blogs/3.jpg" alt="">
+                        <div class="desc">
+                            <p class="tag">Tutorial</p>
+                            <h3>Open source guide</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="./assets/Blogs/4.jpg" alt="">
+                        <div class="desc">
+                            <p class="tag">Tutorial</p>
+                            <h3>Design template</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            <a href="">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="view-all">VIEW ALL</a>
+    </section>
+    <section class="recruit">
+        <h1>LETS WORK TOGETHER</h1>
+        <a>WE ARE HIRING</a>
+    </section>
+    <section class="footer">
+        <div class="first-footer">
+            <div class="logo"> 
+                <img src="./assets/logofooter.jpg" alt="logo">
+            </div>
+            <div class="get-intouch">
+                <a>GET IN TOUCH</a>
+                <div class="social">
+                    <img src="./assets/fb.png" alt="">
+                    <img src="./assets/insta.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="second-footer">
+            <div class="copy-right">
+                <p>&#169 COPYRIGHT 2015 - ALIVE.CO, LTD</p>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <a>
+                        <li>what we do</li>
+                    </a>
+                    <a>
+                        <li>our works</li>
+                    </a>
+                    <a>
+                        <li>who we are</li>
+                    </a>
+                    <a>
+                        <li>get in touch</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="./siema-1.5.1/dist/siema.min.js"></script>\
+<script src="./index.js"></script>
+
+</html>
