@@ -1,4 +1,5 @@
 // Active menu
+
 function openNav() {
   document.getElementById("menu-list").classList.add("show-menu");
   document.getElementById("menu-list").classList.remove("hide-menu");
