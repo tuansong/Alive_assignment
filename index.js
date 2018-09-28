@@ -1,10 +1,12 @@
 // Active menu
 function openNav() {
-  document.getElementById("menu-list").classList.toggle("show-menu");
+  document.getElementById("menu-list").classList.add("show-menu");
+  document.getElementById("menu-list").classList.remove("hide-menu");
 }
 
 function closeNav() {
   document.getElementById("menu-list").classList.remove("show-menu");
+  document.getElementById("menu-list").classList.add("hide-menu");
 }
 
 window.onclick = function(event) {
@@ -61,3 +63,19 @@ window.onclick = function(event) {
     }
   }
 }
+
+// Navbar after scrolling
+
+const nav = document.getElementById('navbar');
+
+window.addEventListener('scroll', function(event) {
+  event.preventDefault();
+
+  if(window.scrollY <= 50) {
+    nav.style.background = 'transparent';
+  }
+  else {
+    nav.style.backgroundColor = 'rgba(167, 171, 178,0.8)';
+    nav.style.zIndex = '100';
+  }
+})

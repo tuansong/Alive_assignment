@@ -11,6 +11,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .header {
@@ -31,12 +32,12 @@ body {
 }
 
 .navbar .nav {
-    position: relative;
+    position: fixed;
     height: inherit;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -99,7 +100,7 @@ body {
 }
 
 .dropdown-menu {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0px;
     width: 100%;
@@ -113,6 +114,17 @@ body {
 
     font-family: Mon-bold;
     font-size: 2em;
+    transform: translateY(-100%);
+}
+
+@keyframes showMenu {
+    from {transform: translateY(-100%)}
+    to {transform: translateY(0%)}
+}
+
+@keyframes closeMenu {
+    from {transform: translateY(0%)}
+    to {transform: translateY(-100%)}
 }
 
 .dropdown-menu .btn-close {
@@ -137,7 +149,15 @@ body {
 
 .dropdown-menu a:hover {background-color: #ddd}
 
-.show-menu {display:flex;}
+.show-menu {
+    animation: showMenu 2s forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.hide-menu {
+    /* display: flex; */
+    animation: closeMenu 2s;
+}
 
 @media (max-width: 780px) {
     .navbar .nav .nav-right {
@@ -638,6 +658,12 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    .container .blog {
+        width: 80%;
+    }
+}
+
 .recruit {
     background: url('./assets/hiring.jpg');
     background-position: center;
@@ -776,6 +802,9 @@ body {
     .footer .first-footer {
         width: 100%;
         text-align: center;
+    }
+    .footer .first-footer .logo {
+        width: 100%
     }
     .footer .first-footer .get-intouch {
         width: 100%;
